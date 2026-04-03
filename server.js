@@ -22,7 +22,7 @@ app.post("/voice", (req, res) => {
   const twiml = `<?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Connect>
-    <Stream url="wss://voice-stream-production.up.railway.app" />
+    <Stream url="${streamUrl}" />
   </Connect>
 </Response>`;
 
